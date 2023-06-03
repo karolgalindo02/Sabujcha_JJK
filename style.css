@@ -1,0 +1,21 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: none;
+}
+
+body {
+  width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+footer {
+
+}
+
+@media(min-width:768px) {}
