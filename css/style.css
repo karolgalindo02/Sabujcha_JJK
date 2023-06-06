@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat:100,200,300,300i,400,500,600,700,800,900|Playfair+Display:400,400i,700,700i,900,900i|Work+Sans:100,200,300,400,500,600,700,800,900');
+body {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #242424
+}
+.wrap-body{
+    margin: 0 50px;
+    width: calc(100% - 100px);
+    line-height: 1.5;
+    text-align: left;
+}
+.wrap-header{
+    display: block;
+    box-sizing: border-box;
+}
+.img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 37px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+h5 {
+    font-size: 18px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+h6 {
+    font-size: 16px;
+	font-family: 'Playfair Display', serif;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
