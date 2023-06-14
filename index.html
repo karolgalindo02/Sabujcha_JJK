@@ -2,52 +2,51 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title>Sabujcha JJK</title>
+      <title>Sabujcha JJFK</title>
      	<!-- Mobile Specific Metas
 	================================================== -->
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <!-- CSS
 	================================================== -->
 	    <link rel="stylesheet" href="css/style.css">
-	    <link rel="stylesheet" href="css/menu.css">
-       <link rel="stylesheet" href="css/grid.css">
    </head>
    <body>
-      <div class="wrap-body"></div>
      <!--////////////////////////////////////Header-->
       <header>
-    <!--Container-->
-    <div class="wrap-header">
-      <div class="header-bottom" src="img/logo.png"></div>
-         <div class="container-fluid">
-            <div class="row">
-            <div class="col left-block">
-            <div class="col mid-auto"><div class="logo"><a href="index.html">
-               <img alt="Logo Sabujcha" src="img/logo.png"></a>
-            </div>
-            
-         </div>
-      </div>
-   </div>        
     <!--Top Menu-->
-    <div id="cssmenu" >
+    <nav class="cssmenu" >
       <ul>
-         <li class="active"><a href="index.html"><span>HOME</span></a></li>
-         <li class="has-sub"><a href="#"><span>ABOUT</span></a>
-           <ul>
-         <li><a href='shop.html'><span>SHOP</span></a></li>
-         <li><a href="#"><span>BLOG</span></a></li>
-         <li><a href="#"><span>PAGES</span></a></li>
-         <li class="last"><a href="#"><span>CONTACT</span></a></li>
-      </ul>
-   </div>
-</div>
-         <div class="banner"><img src="img/slider-2.jpg"></div>
-            <h1>Want to stay healthy</h1>
-         <h1>drink matcha.</h1>
-	 <a href="shop.html" class="card_text shop-now">Shop Now</a>	 
-      </header>
+         <li><a>HOME</a></li>
+         <li>ABOUT</li>
+         <li>BLOG</li>
+         <li>PAGES</li>
+         <li>CONTACT</li>
+       </ul>
+   </nav>        
+    <!--Container-->
+      <div class="logo"><img src="img/logo.png" alt="logo" /></div>
+      <div class="cart">
+         <select name="coin" id="select-coin">
+           <option value="USD">USD</option>
+           <option value="COP">COP</option>
+         </select>
+         <img src="img/carrito-de-compras.png" alt="cart" />
+      <div class="menu">
+        <img src="img/menu.png" alt="Menu">
+      </div>
+    </div>
+   </header>          
+      <!--Home banner-->
       <main>
+      <section class="home-img">
+         <div class="text-home-img1">
+           <h1>
+             Want to stay healthy <br />
+             drink matcha.
+           </h1>
+           <u href="shop.html">Shop Now</u>
+         </div>
+       </section>
      <!--Offers by JJulian-->
 	      
      <!--Latest Products by JJulian-->
@@ -72,8 +71,7 @@
           <h1><u>Latest News</u></h1>
     </section>
      <!--Logos News by Karol-->
-	      
-      </main>
+	</main>
      <!--////////////////////////////////////Footer-->
       <footer>
       </footer>
