@@ -1,26 +1,117 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Montserrat:100,200,300,300i,400,500,600,700,800,900|Playfair+Display:400,400i,700,700i,900,900i|Work+Sans:100,200,300,400,500,600,700,800,900');
-body {
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    color: #242424
-}
-.wrap-body{
-    margin: 0 50px;
-    width: calc(100% - 100px);
-    line-height: 1.5;
-    text-align: left;
-}
-.wrap-header{
-    display: block;
+/* General styles */
+* {
+    margin: 0;
     box-sizing: border-box;
-}
-.img {
+  }
+  img {
     max-width: 100%;
-    transition: all 0.3s ease-out 0s;
+  }
+  :root {
+    --font-tittle-playfair: "Playfair Display", serif;
+    --font-text-lora: "Lora", serif;
+    --font-title-products-worksans: "Work Sans", sans-serif;
+    --typography-color: #575757;
+    --typography-color2: #333333;
+    --labels-color: #529f0f;
+  }
+  body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 90px 0px 90px;
+  }
+
+/* Header and nav */
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 1.5% 0;
+}
+.cssmenu {
+  display: flex;
+  flex-direction: row;
+  width: 33.33%;
+}
+.menu {
+  display: none;
+}
+.cssmenu ul,
+.logos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 10px;
+  justify-content: space-evenly;
+  font-family: var(--font-title-products-worksans);
+  font-weight: bold;
+  color: black;
+  font-size: 0.75rem;
+}
+.cssmenu li {
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  width: 33.33%;
+  justify-content: center;
+}
+.logo img {
+  cursor: pointer;
+}
+.cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 40%;
+  align-items: center;
+}
+#select-coin {
+  border: none;
+  font-size: 14px;
+  font-family: var(--font-text-lora);
+  cursor: pointer;
+}
+.cart img {
+  width: 9%;
+  height: 75%;
+  margin-left: 2%;
+  cursor: pointer;
 }
 
+/* Home image */
+.home-img {
+    background: url(../img/slider-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .text-home-img1 h1 {
+    font-size: clamp(1.875rem, 4vw, 3.75rem);
+    font-weight: 400;
+    padding-bottom: 1%;
+  }
+  .text-home-img1 {
+    padding-top: 20%;
+    font-family: var(--font-tittle-playfair);
+    padding: 265px 0;
+  }
+  .text-home-img1 u {
+    font-family: var(--font-title-products-worksans);
+    font-size: clamp(1.023rem, 1vw, 1.875rem);
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+/* Text size *//*
 h1 {
     font-size: 46px;
     font-weight: 500;
@@ -52,4 +143,4 @@ h6 {
 ul {
     margin: 0px;
     padding: 0px;
-}
+}*/
