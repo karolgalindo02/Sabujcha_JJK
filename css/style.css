@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Montserrat:100,200,300,300i,400,500,600,700,800,900|Playfair+Display:400,400i,700,700i,900,900i|Work+Sans:100,200,300,400,500,600,700,800,900');
+
 /* General styles */
 * {
     margin: 0;
@@ -111,6 +112,170 @@ header {
     cursor: pointer;
   }
 
+/*Lastest products*/
+.lastest-products,
+.new-products,
+.newsletter {
+  background-image: url(../img/bg-1.jpg);
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+}
+.lastest-products h1,
+.new-products h1,
+.newsletter h1,
+.latest-news h1 {
+  font-family: var(--font-tittle-playfair);
+  font-size: clamp(1.875rem, 4vw, 2.375rem);
+  font-weight: 100;
+  padding-top: 7%;
+  position: relative;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.lastest-products p,
+.new-products p {
+  max-width: 765px;
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+}
+.lastest-products-cards,
+.new-products-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.lastest-products-cards img,
+.card-new-product img {
+  width: 100%;
+  align-self: center;
+  border: #ececec solid 1px;
+}
+.card-last-product,
+.card-new-product {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.latest-news .card-last-product img {
+  border: none;
+}
+.card-last-product p,
+.card-new-product p {
+  text-align: start;
+  color: var(--typography-color);
+  font-family: var(--font-title-products-worksans);
+  font-size: 18px;
+  padding-top: 3%;
+}
+.card-last-product .price,
+.card-new-product .price {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0% 0% 3% 0%;
+}
+del {
+  font-weight: 100;
+}
+.discount::before {
+  content: attr(data-text);
+  background: var(--labels-color);
+  font-family: var(--font-text-lora);
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 5%;
+  left: 5%;
+  color: white;
+  line-height: 40px;
+  font-size: 12px;
+  z-index: 9999;
+}
+/*Customer*/
+section .block,
+.logos {
+  padding: 5% 0% 5% 0%;
+  text-align: center;
+  color: #575757;
+}
+.block img {
+  align-self: center;
+  padding-bottom: 3%;
+}
+.block h4 {
+  font-family: var(--font-text-lora);
+  font-style: italic;
+  font-weight: 300;
+  padding-bottom: 2%;
+  font-size: clamp(1.25rem, 3vw, 1.375rem);
+}
+.block h6 {
+  color: var(--typography-color);
+  font-family: var(--font-title-products-worksans);
+  padding-bottom: 2%;
+  font-size: clamp(0.75rem, 2vw, 0.8rem);
+}
+.block .customer {
+  font-weight: 300;
+}
+/*New products*/
+.new-products,
+.latest-news {
+  background: #f3f3f3;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+/*Newsletter*/
+.newsletter {
+  background-image: url(../img/bg-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding-top: 3%;
+}
+.email-suscribe {
+  display: flex;
+  flex-flow: row wrap;
+  width: 40%;
+}
+.newsletter h1 {
+  font-size: clamp(1.5rem, 3vw, 3.75rem);
+}
+.newsletter input {
+  background: transparent;
+  border: 1px solid #cacaca;
+  color: #868686;
+  font-size: 13px;
+  height: 60px;
+  padding-left: 3%;
+  width: 70%;
+  font-family: var(--font-text-lora);
+}
+.newsletter button {
+  color: white;
+  background-color: black;
+  width: 30%;
+  font-size: clamp(0.625rem, 1vw, 0.75rem);
+  font-family: var(--font-title-products-worksans);
+  text-align: center;
+  cursor: pointer;
+}
 /* Text size *//*
 h1 {
     font-size: 46px;
