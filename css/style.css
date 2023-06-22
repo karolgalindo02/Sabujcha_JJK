@@ -111,7 +111,41 @@ header {
     font-weight: 800;
     cursor: pointer;
   }
-
+/*Sale by JJulian*/
+.sale-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2%;
+  padding: 0% 10% 0% 10%;
+}
+.sale-container img {
+  padding: 0px;
+  width: 100%;
+}
+.banner {
+  position: relative;
+  cursor: pointer;
+}
+.banner-content {
+  position: absolute;
+  inset: 0;
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80px;
+}
+.banner h4 {
+  font-family: var(--font-text-lora);
+  color: var(--labels-color);
+  font-size: clamp(2rem, 3vw, 2.375rem);
+  font-weight: 100;
+}
+.banner h5 {
+  font-family: var(--font-title-products-worksans);
+  color: var(--typography-color);
+  font-size: clamp(0.875rem, 1vw, 0.75rem);
+  font-weight: bold;
+}
 /*Lastest products*/
 .lastest-products,
 .new-products,
@@ -275,6 +309,52 @@ section .block,
   font-family: var(--font-title-products-worksans);
   text-align: center;
   cursor: pointer;
+}
+/*Footer by JJulian*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5% 3% 3% 12%;
+  justify-content: center;
+  background: #f8f8f8;
+}
+.footer ul {
+  list-style: none;
+  padding: 0% 2% 0% 2%;
+  width: 25%;
+}
+.footer .list-tittle {
+  font-weight: 400;
+  font-family: var(--font-tittle-playfair);
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
+}
+.footer li {
+  font-family: var(--font-text-lora);
+  font-size: 14px;
+  line-height: 2.5;
+  cursor: pointer;
+}
+footer .last-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ebebeb;
+  width: 100%;
+  font-size: 14px;
+  font-family: var(--font-text-lora);
+  padding: 18px 0 20px;
+  padding-left: 7%;
+}
+.last-footer img {
+  margin-left: 100px;
+}
+.heart {
+  color: red;
+}
+.go-up {
+  display: none;
 }
 /* Text size *//*
 h1 {
