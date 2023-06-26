@@ -350,7 +350,57 @@ section .block,
   list-style: outside none none;
   margin-bottom: 10px;
 }
-
+/*Latest news by JJulian*/
+.latest-news {
+  text-align: start;
+  background-image: url(../img/bg-1.jpg);
+}
+.latest-news img {
+  padding: 4%;
+}
+.latest-news span {
+  color: var(--labels-color);
+  margin-top: 5%;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--font-text-lora);
+  padding: 0% 4% 0% 4%;
+}
+.latest-news h3 {
+  font-size: clamp(1.375rem, 2vw, 1.5rem);
+  font-family: var(--font-tittle-playfair);
+  color: var(--typography-color2);
+  padding: 3% 4% 0% 4%;
+  font-weight: 100;
+}
+.news{
+  justify-content: center;
+  gap: 2%;
+}
+.new{
+  width: 30%;
+}
+.latest-news p {
+  font-family: var(--font-text-lora);
+  font-size: 17px;
+  margin-bottom: 25px;
+  padding: 4% 4% 0% 4%;
+}
+.latest-news a {
+  font-size: 12px;
+  padding-bottom: 3%;
+  padding: 0% 4% 0% 4%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*Brand logos by JJulian*/
+.logos {
+  width: 100%;
+}
+.logos img{
+  cursor: pointer;
+}
 /*Footer by JJulian*/
 .footer {
   display: flex;
