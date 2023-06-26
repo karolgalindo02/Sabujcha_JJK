@@ -2,39 +2,57 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title>Sabujcha JJFK</title>
+      <title>Sabujcha JJK</title>
      	<!-- Mobile Specific Metas
 	================================================== -->
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- ICON
+	================================================== -->      
+      <link rel="shortcut icon" href="./src/icons/testi.png" type="image/x-icon">
       <!-- CSS
 	================================================== -->
-	    <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/grid.css">
+      <link rel="stylesheet" href="./src/css/visual.css">
+	    <link rel="stylesheet" href="./src/css/style.css">
+      <link rel="stylesheet" href="./src/css/grid.css">
+    <!--CDN FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
    </head>
    <body>
-     <!--////////////////////////////////////Header-->
-      <header>
+    
+  <!--Header by Karol-->
+      <header id="top">
     <!--Top Menu-->
     <nav class="cssmenu" >
-      <ul>
-         <li><a>HOME</a></li>
-         <li>ABOUT</li>
-         <li>BLOG</li>
-         <li>PAGES</li>
-         <li>CONTACT</li>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-menu nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-menu nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-menu nav-link">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a href="shop.html" class="nav-menu nav-link">PAGES</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-menu nav-link">CONTACT</a>
+        </li>
        </ul>
    </nav>        
-    <!--Header by Karol-->
-      <div class="logo"><img src="img/logo.png" alt="logo" /></div>
+      <div class="logo"><img src="./src/img/logo.png" alt="logo" /></div>
       <div class="cart">
          <select name="coin" id="select-coin">
            <option value="USD">USD</option>
            <option value="COP">COP</option>
          </select>
-         <img src="img/carrito-de-compras.png" alt="cart" />
-      <div class="menu">
-        <img src="img/menu.png" alt="Menu">
-      </div>
+         <div class="shop" >
+         <i class="fa-solid fa-cart-shopping cart"></i></div>
+      <button class="menu" aria-label="Abrir menú">
+        <img src="./src/icons/menu.png" alt="Menu">
+      </button>
     </div>
    </header>          
       <!--Home banner-->
@@ -51,14 +69,14 @@
      <!--Offers by JJulian-->
      <section class="sale-container">
       <div class="banner">
-        <img src="img/banner-1.png" alt="Sale-Banner" />
+        <img src="./src/img/banner-1.png" alt="Sale-Banner" />
         <div class="banner-content">
           <h4>-50% Sale</h4>
           <h5>SUMMER VACATION</h5>
         </div>
       </div>
       <div class="banner">
-        <img src="img/banner-2.png" alt="Sale-Banner" />
+        <img src="./src/img/banner-2.png" alt="Sale-Banner" />
         <div class="banner-content">
           <h4>-20% Sale</h4>
           <h5>WINTER VACATION</h5>
@@ -66,27 +84,27 @@
       </div>
     </section> 
      <!--Latest Products by JJulian-->
-     <section class="lastest-products">
-      <h1>Lastest Products</h1>
+     <section class="latest-products">
+      <h1>Latest Products</h1>
       <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit sed do </br> eiusmod tempor incididunt</p>
-      <div class="lastest-products-cards">
+      <div class="latest-products-cards">
         <div class="card-last-product discount" data-text="-20%">
-          <img src="img/product-1.jpg" alt="Nature close tea">
+          <img src="./src/img/product-1.jpg" alt="Nature close tea">
           <p>Nature Close Tea</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
         <div class="card-last-product">
-          <img src="img/product-2.jpg" alt="Pink wave cup">
+          <img src="./src/img/product-2.jpg" alt="Pink wave cup">
           <p>Pink wave Cup</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
         <div class="card-last-product discount" data-text="-50%">
-          <img src="img/product-3.jpg" alt="Tea and Chai">
+          <img src="./src/img/product-3.jpg" alt="Tea and Chai">
           <p>Tea and Chai</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
         <div class="card-last-product">
-          <img src="img/product-4.jpg" alt="Pearly Everlasting">
+          <img src="./src/img/product-4.jpg" alt="Pearly Everlasting">
           <p>Pearly Everlasting</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
@@ -95,7 +113,7 @@
      <!--Customer by Karol-->
      <section>
       <div class="block">
-        <img src="img/testi.png" alt="">
+        <img src="./src/icons/testi.png" alt="">
         <h4>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, se do eiusmod tempor incididunt ut labore
         </h4>
@@ -111,59 +129,91 @@
       <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt</p>
       <div class="new-products-cards">
         <div class="card-new-product discount" data-text="-30%">
-          <img src="img/product-1.jpg" alt="BeBe Bloom tea">
+          <a href="#visual1"><img src="./src/img/product-1.jpg" alt="BeBe Bloom tea"></a>
           <p>BeBe Bloom tea</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
+
         <div class="card-new-product discount" data-text="-60%">
-          <img src="img/product-3.jpg" alt="Que herbal Tea">
+          <a href="#visual2"><img src="./src/img/product-3.jpg" alt="Que herbal Tea"></a>
           <p>Que herbal Tea</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
+
         <div class="card-new-product">
-          <img src="img/product-5.jpg" alt="Society Ice Tea">
+          <a href="#visual3"><img src="./src/img/product-5.jpg" alt="Society Ice Tea"></a>
           <p>Society Ice Tea</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
+
         <div class="card-new-product discount" data-text="-60%">
-          <img src="img/product-7.jpg" alt="Best Friends Tea">
+          <a href="#visual4"><img src="./src/img/product-7.jpg" alt="Best Friends Tea"></a>
           <p>Best Friends Tea</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
+
         <div class="card-new-product discount" data-text="-50%">
-          <img src="img/product-2.jpg" alt="Every spice Tea">
+          <a href="#visual5"><img src="./src/img/product-2.jpg" alt="Every spice Tea"></a>
           <p>Every spice Tea</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
+
         <div class="card-new-product">
-          <img src="img/product-4.jpg" alt="Tea and Chai">
+          <a href="#visual6"><img src="./src/img/product-4.jpg" alt="Tea and Chai"></a>
           <p>Tea and Chai</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
+
         <div class="card-new-product discount" data-text="-40%">
-          <img src="img/product-6.jpg" alt="Green Tea Tulsi">
+          <a href="#visual7"><img src="./src/img/product-6.jpg" alt="Green Tea Tulsi"></a>
           <p>Green Tea Tulsi</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
+        
         <div class="card-new-product">
-          <img src="img/product-8.jpg" alt="Instant Tea Premix">
+          <a href="#visual8"><img src="./src/img/product-8.jpg" alt="Instant Tea Premix"></a>
           <p>Instant Tea Premix</p>
           <p class="price">$100.00 - <del>$120.00</del></p>
         </div>
       </div>
     </section>
-    <!--Join and Latest News by Felipe-->
-    <section class="newsletter">
-          <h1>Join to our Newsletter</h1>
-             <div class="email-suscribe">
-             <input type="email" placeholder="Your Email Address*">
-             <button>SUBSCRIBE</button>
-          </div>
+    <!--Join and Latest News-->
+    <section class="join">
+      <h1>Join to our Newsletter</h1>
+      <div class="email-suscribe">
+        <input type="email" placeholder="Your Email Address*">
+        <button>SUBSCRIBE</button>
+      </div>
     </section>
     <section class="latest-news">
-          <h1><u>Latest News</u></h1>
+      <h1><u>Latest News</u></h1>
+      <div class="latest-products-cards news">
+        <div class="card-last-product new">
+          <img src="./src/img/blog-single-1.jpg" alt="Post">
+          <span><u>14 Sep</u></span>
+          <h3>Lorem ipsum sit ame co.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt ut labore et dolore
+          </p>
+          <a>READ MORE</a>
+        </div>
+        <div class="card-last-product new">
+          <img src="./src/img/blog-single-2.jpg" alt="Post">
+          <span><u>20 Dec</u></span>
+          <h3>Lorem ipsum sit ame co.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt ut labore et dolore
+          </p>
+          <a>READ MORE</a>
+        </div>
+        <div class="card-last-product new">
+          <img src="./src/img/blog-single-3.jpg" alt="Post">
+          <span><u>18 Aug</u></span>
+          <h3>Lorem ipsum sit ame co.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt ut labore et dolore
+          </p>
+          <a>READ MORE</a>
+        </div>
     </section>
-     <!--Logos News by Felipe-->
+     <!--Logos News-->
 	</main>
      <!--////////////////////////////////////Footer by JJulian-->
         <footer>
@@ -207,11 +257,298 @@
           <div class="last-footer">
             <p> © 2021<strong> SabujCha </strong>Made With
             <p class="heart"> ❤ </p> By <strong>HasThemes</strong></p>
-            <img src="img/payment.png" alt="Payment">
+            <img src="./src/icons/payment.png" alt="Payment">
           </div>
         </footer>
-        <a class="go-up" href="#top">
-        <img src="icons/arrows.png" alt="Go Up">
+        <a href="#top" class="button-toTop"><img src="./src/icons/arrows.png" alt="Go Up"></a>
         </a>
+<!-- ==== Visual Productos ====-->
+<div id="visual1" class="visualmask">
+  <div class="visualbox movedown">
+      <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark"></i></a>
+      <div class="contenido-producto">
+          <div class="image-producto">
+              <img src="./src/img/product-detalis-l1.jpg" class="img-product" alt="">
+          </div>
+          <div class="descripcion-producto">
+              <div class="title-producto">BeBe Bloom tea</div>
+              <div class="precio-producto"><span class="price-tachado">$120.00</span> $100.00</div>
+              <div class="text-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam placeat voluptate repellendus repudiandae laboriosam facilis ex consectetur. Omnis, temporibus, ut quasi doloribus accusantium aspernatur incidunt laborum quos saepe
+                  esse voluptate!</div>
+              <div class="size">Size*</div>
+              <select name="" id="" class="select-product">
+                  <option value="S">S</option>
+                  <option value="X">X</option>
+                  <option value="L">L</option>
+                  <option value="M">M</option>
+              </select>
+              <div class="color">Color*</div>
+              <div class="input-color1"></div>
+              <div class="input-color2"></div>
+              <div class="input-color3"></div>
+              <div class="cantidad">
+                  <input type="number" min="2" max="10" class="input-cantidad" value="1">
+                  <button class="btn-product">ADD TO CART</button>
+              </div>
+              <div class="stock">
+                  <i class="fa-solid fa-check"></i> In stock
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="visual2" class="visualmask">
+  <div class="visualbox movedown">
+      <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark"></i></a>
+      <div class="contenido-producto">
+          <div class="image-producto">
+              <img src="./src/img/product-detalis-l2.jpg" class="img-product" alt="">
+          </div>
+          <div class="descripcion-producto">
+              <div class="title-producto">Que herbal Tea</div>
+              <div class="precio-producto"><span class="price-tachado">$120.00</span> $100.00</div>
+              <div class="text-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam placeat voluptate repellendus repudiandae laboriosam facilis ex consectetur. Omnis, temporibus, ut quasi doloribus accusantium aspernatur incidunt laborum quos saepe
+                  esse voluptate!</div>
+              <div class="size">Size*</div>
+              <select name="" id="" class="select-product">
+                  <option value="S">S</option>
+                  <option value="X">X</option>
+                  <option value="L">L</option>
+                  <option value="M">M</option>
+              </select>
+              <div class="color">Color*</div>
+              <div class="input-color1"></div>
+              <div class="input-color2"></div>
+              <div class="input-color3"></div>
+              <div class="cantidad">
+                  <input type="number" min="2" max="10" class="input-cantidad" value="1">
+                  <button class="btn-product">ADD TO CART</button>
+              </div>
+              <div class="stock">
+                  <i class="fa-solid fa-check"></i> In stock
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="visual3" class="visualmask">
+  <div class="visualbox movedown">
+      <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark"></i></a>
+      <div class="contenido-producto">
+          <div class="image-producto">
+              <img src="./src/img/product-detalis-l3.jpg" class="img-product" alt="">
+          </div>
+          <div class="descripcion-producto">
+              <div class="title-producto">Society Ice Tea</div>
+              <div class="precio-producto"><span class="price-tachado">$120.00</span> $100.00</div>
+              <div class="text-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam placeat voluptate repellendus repudiandae laboriosam facilis ex consectetur. Omnis, temporibus, ut quasi doloribus accusantium aspernatur incidunt laborum quos saepe
+                  esse voluptate!</div>
+              <div class="size">Size*</div>
+              <select name="" id="" class="select-product">
+                  <option value="S">S</option>
+                  <option value="X">X</option>
+                  <option value="L">L</option>
+                  <option value="M">M</option>
+              </select>
+              <div class="color">Color*</div>
+              <div class="input-color1"></div>
+              <div class="input-color2"></div>
+              <div class="input-color3"></div>
+              <div class="cantidad">
+                  <input type="number" min="2" max="10" class="input-cantidad" value="1">
+                  <button class="btn-product">ADD TO CART</button>
+              </div>
+              <div class="stock">
+                  <i class="fa-solid fa-check"></i> In stock
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="visual4" class="visualmask">
+  <div class="visualbox movedown">
+      <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark"></i></a>
+      <div class="contenido-producto">
+          <div class="image-producto">
+              <img src="./src/img/product-detalis-l2.jpg" class="img-product" alt="">
+          </div>
+          <div class="descripcion-producto">
+              <div class="title-producto">Best Friends Tea</div>
+              <div class="precio-producto"><span class="price-tachado">$120.00</span> $100.00</div>
+              <div class="text-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam placeat voluptate repellendus repudiandae laboriosam facilis ex consectetur. Omnis, temporibus, ut quasi doloribus accusantium aspernatur incidunt laborum quos saepe
+                  esse voluptate!</div>
+              <div class="size">Size*</div>
+              <select name="" id="" class="select-product">
+                  <option value="S">S</option>
+                  <option value="X">X</option>
+                  <option value="L">L</option>
+                  <option value="M">M</option>
+              </select>
+              <div class="color">Color*</div>
+              <div class="input-color1"></div>
+              <div class="input-color2"></div>
+              <div class="input-color3"></div>
+              <div class="cantidad">
+                  <input type="number" min="2" max="10" class="input-cantidad" value="1">
+                  <button class="btn-product">ADD TO CART</button>
+              </div>
+              <div class="stock">
+                  <i class="fa-solid fa-check"></i> In stock
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="visual5" class="visualmask">
+  <div class="visualbox movedown">
+      <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark"></i></a>
+      <div class="contenido-producto">
+          <div class="image-producto">
+              <img src="./src/img/product-detalis-l1.jpg" class="img-product" alt="">
+          </div>
+          <div class="descripcion-producto">
+              <div class="title-producto">Every spice Tea</div>
+              <div class="precio-producto"><span class="price-tachado">$120.00</span> $100.00</div>
+              <div class="text-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam placeat voluptate repellendus repudiandae laboriosam facilis ex consectetur. Omnis, temporibus, ut quasi doloribus accusantium aspernatur incidunt laborum quos saepe
+                  esse voluptate!</div>
+              <div class="size">Size*</div>
+              <select name="" id="" class="select-product">
+                  <option value="S">S</option>
+                  <option value="X">X</option>
+                  <option value="L">L</option>
+                  <option value="M">M</option>
+              </select>
+              <div class="color">Color*</div>
+              <div class="input-color1"></div>
+              <div class="input-color2"></div>
+              <div class="input-color3"></div>
+              <div class="cantidad">
+                  <input type="number" min="2" max="10" class="input-cantidad" value="1">
+                  <button class="btn-product">ADD TO CART</button>
+              </div>
+              <div class="stock">
+                  <i class="fa-solid fa-check"></i> In stock
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="visual6" class="visualmask">
+  <div class="visualbox movedown">
+      <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark"></i></a>
+      <div class="contenido-producto">
+          <div class="image-producto">
+              <img src="./src/img/product-detalis-l1.jpg" class="img-product" alt="">
+          </div>
+          <div class="descripcion-producto">
+              <div class="title-producto">Tea and Chai</div>
+              <div class="precio-producto"><span class="price-tachado">$120.00</span> $100.00</div>
+              <div class="text-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam placeat voluptate repellendus repudiandae laboriosam facilis ex consectetur. Omnis, temporibus, ut quasi doloribus accusantium aspernatur incidunt laborum quos saepe
+                  esse voluptate!</div>
+              <div class="size">Size*</div>
+              <select name="" id="" class="select-product">
+                  <option value="S">S</option>
+                  <option value="X">X</option>
+                  <option value="L">L</option>
+                  <option value="M">M</option>
+              </select>
+              <div class="color">Color*</div>
+              <div class="input-color1"></div>
+              <div class="input-color2"></div>
+              <div class="input-color3"></div>
+              <div class="cantidad">
+                  <input type="number" min="2" max="10" class="input-cantidad" value="1">
+                  <button class="btn-product">ADD TO CART</button>
+              </div>
+              <div class="stock">
+                  <i class="fa-solid fa-check"></i> In stock
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="visual7" class="visualmask">
+  <div class="visualbox movedown">
+      <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark"></i></a>
+      <div class="contenido-producto">
+          <div class="image-producto">
+              <img src="./src/img/product-detalis-l2.jpg" class="img-product" alt="">
+          </div>
+          <div class="descripcion-producto">
+              <div class="title-producto">Green Tea Tulsi</div>
+              <div class="precio-producto"><span class="price-tachado">$120.00</span> $100.00</div>
+              <div class="text-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam placeat voluptate repellendus repudiandae laboriosam facilis ex consectetur. Omnis, temporibus, ut quasi doloribus accusantium aspernatur incidunt laborum quos saepe
+                  esse voluptate!</div>
+              <div class="size">Size*</div>
+              <select name="" id="" class="select-product">
+                  <option value="S">S</option>
+                  <option value="X">X</option>
+                  <option value="L">L</option>
+                  <option value="M">M</option>
+              </select>
+              <div class="color">Color*</div>
+              <div class="input-color1"></div>
+              <div class="input-color2"></div>
+              <div class="input-color3"></div>
+              <div class="cantidad">
+                  <input type="number" min="2" max="10" class="input-cantidad" value="1">
+                  <button class="btn-product">ADD TO CART</button>
+              </div>
+              <div class="stock">
+                  <i class="fa-solid fa-check"></i> In stock
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="visual8" class="visualmask">
+  <div class="visualbox movedown">
+      <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark"></i></a>
+      <div class="contenido-producto">
+          <div class="image-producto">
+              <img src="./src/img/product-detalis-l4.jpg" class="img-product" alt="">
+          </div>
+          <div class="descripcion-producto">
+              <div class="title-producto">Instant Tea Premix</div>
+              <div class="precio-producto"><span class="price-tachado">$120.00</span> $100.00</div>
+              <div class="text-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam placeat voluptate repellendus repudiandae laboriosam facilis ex consectetur. Omnis, temporibus, ut quasi doloribus accusantium aspernatur incidunt laborum quos saepe
+                  esse voluptate!</div>
+              <div class="size">Size*</div>
+              <select name="" id="" class="select-product">
+                  <option value="S">S</option>
+                  <option value="X">X</option>
+                  <option value="L">L</option>
+                  <option value="M">M</option>
+              </select>
+              <div class="color">Color*</div>
+              <div class="input-color1"></div>
+              <div class="input-color2"></div>
+              <div class="input-color3"></div>
+              <div class="cantidad">
+                  <input type="number" min="2" max="10" class="input-cantidad" value="1">
+                  <button class="btn-product">ADD TO CART</button>
+              </div>
+              <div class="stock">
+                  <i class="fa-solid fa-check"></i> In stock
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ==== End Visual Productos ====-->        
+        <script>
+        const navToggle = document.querySelector(".menu");
+        const navMenu = document.querySelector(".nav-menu");
+
+        navToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("nav-menu_visible");
+
+          if (navMenu.classList.contains("nav-menu_visible")) {
+           navToggle.setAttribute("aria-label", "Cerrar menú");
+          } else {
+           navToggle.setAttribute("aria-label", "Abrir menú");
+          }
+        });
+        </script>
    </body>
 </html>
