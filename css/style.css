@@ -310,6 +310,47 @@ section .block,
   text-align: center;
   cursor: pointer;
 }
+/*Description shop by JJulian*/
+.description-review-topbar {
+  justify-content: center;
+  display: flex;
+}
+.description-review-topbar a {
+  border-bottom: 2px solid transparent;
+  color: #242424;
+  display: inline-block;
+  font-family: var(--font-text-lora);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 35px;
+  padding-bottom: 10px;
+}
+.description-review-topbar a.active {
+  border-bottom: 2px solid #519f10;
+  color: #519f10;
+}
+.tab-content.description-review-bottom {
+  background-color: #fff;
+  border-radius: 5px;
+  border-top: 1px solid #ebebeb;
+  padding: 50px 0 0px;
+}
+.product-description-wrapper > p {
+  color: #242424;
+  font-family: var(--font-text-lora);
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.product-description-wrapper li {
+  color: #242424;
+  display: block;
+  font-family: var(--font-text-lora);
+  font-size: 14px;
+  list-style: outside none none;
+  margin-bottom: 10px;
+}
+
 /*Footer by JJulian*/
 .footer {
   display: flex;
