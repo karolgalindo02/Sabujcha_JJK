@@ -9,17 +9,12 @@
     max-width: 100%;
   }
   :root {
-  /* COLORES */
-    --tipografia_gris: #575757;
-    --tipografia_negro: #000000;
-    --label: #529f0f;
-    --hover: #529f0f;
-  /* FONTS */
     --font-tittle-playfair: "Playfair Display", serif;
     --font-text-lora: "Lora", serif;
     --font-title-products-worksans: "Work Sans", sans-serif;
     --typography-color: #575757;
     --typography-color2: #333333;
+    --labels-color: #529f0f;
   }
   body {
     background-color: white;
@@ -28,32 +23,8 @@
     padding: 10px 90px 0px 90px;
   }
 
-.button-toTop {
-  display: block;
-  position: fixed;
-  background-color: black;
-  bottom: 40px;
-  cursor: pointer;
-  right: 12px;
-  z-index: 99999999;
-  width: 35px;
-  height: 35px;
-}
-.button-toTop:hover{
-  cursor: pointer;
-  background-color: #A3C145;
-  color: #fff;
-  transition-duration: 4s;
-  transition-delay: 2s;
-}
-.button-toTop img{
-  margin-top: 7px;
-  margin-left: 7px;
-  width: 20px;
-  height: 20px;
-}
 /* Header and nav */
-#top {
+header {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -80,31 +51,16 @@
   color: black;
   font-size: 0.75rem;
 }
-.nav-item{
-font-size: 13px;
-font-weight: 500;
-
-line-height: 2rem;
-text-transform: uppercase;
-width: max-content;
-font-family: var(--titulo);
+.cssmenu li {
+  cursor: pointer;
 }
-
-.nav-item a {
-  text-decoration: none;
-  background: none;
-  color: #000000;
-}
-
 .logo {
-  font-weight: bold;
-  line-height: 70px;
-  margin-left: 100px;
-  position: block;
+  display: flex;
+  width: 33.33%;
+  justify-content: center;
 }
 .logo img {
   cursor: pointer;
-  text-align: center;
 }
 .cart {
   display: flex;
@@ -115,15 +71,14 @@ font-family: var(--titulo);
 }
 #select-coin {
   border: none;
-  background-color: #fff;
   font-size: 14px;
   font-family: var(--font-text-lora);
   cursor: pointer;
 }
-.shop {
+.cart img {
   width: 9%;
+  height: 75%;
   margin-left: 2%;
-  position: relative;
   cursor: pointer;
 }
 
@@ -181,7 +136,7 @@ font-family: var(--titulo);
 }
 .banner h4 {
   font-family: var(--font-text-lora);
-  color: var(--label);
+  color: var(--labels-color);
   font-size: clamp(2rem, 3vw, 2.375rem);
   font-weight: 100;
 }
@@ -191,24 +146,21 @@ font-family: var(--titulo);
   font-size: clamp(0.875rem, 1vw, 0.75rem);
   font-weight: bold;
 }
-/*Latest products*/
-.latest-products,
+/*Lastest products*/
+.lastest-products,
 .new-products,
-.join {
-  background-image: url(..img/bg-1.jpg);
+.newsletter {
+  background-image: url(../img/bg-1.jpg);
   margin-top: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding-bottom: 10%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.latest-products h1,
+.lastest-products h1,
 .new-products h1,
-.join h1,
+.newsletter h1,
 .latest-news h1 {
   font-family: var(--font-tittle-playfair);
   font-size: clamp(1.875rem, 4vw, 2.375rem);
@@ -218,14 +170,14 @@ font-family: var(--titulo);
   margin-bottom: 2%;
   text-align: center;
 }
-.latest-products p,
+.lastest-products p,
 .new-products p {
   max-width: 765px;
   text-align: center;
   margin-bottom: 3%;
   font-size: clamp(0.875rem, 1.5vw, 1.25rem);
 }
-.latest-products-cards,
+.lastest-products-cards,
 .new-products-cards {
   display: flex;
   flex-flow: row wrap;
@@ -234,7 +186,7 @@ font-family: var(--titulo);
   padding-left: 7%;
   padding-right: 7%;
 }
-.latest-products-cards img,
+.lastest-products-cards img,
 .card-new-product img {
   width: 100%;
   align-self: center;
@@ -271,7 +223,7 @@ del {
 }
 .discount::before {
   content: attr(data-text);
-  background: var(--label);
+  background: var(--labels-color);
   font-family: var(--font-text-lora);
   font-weight: 700;
   text-align: center;
@@ -323,7 +275,7 @@ section .block,
   text-align: center;
 }
 /*Newsletter*/
-.join {
+.newsletter {
   background-image: url(../img/bg-2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -336,10 +288,10 @@ section .block,
   flex-flow: row wrap;
   width: 40%;
 }
-.join h1 {
+.newsletter h1 {
   font-size: clamp(1.5rem, 3vw, 3.75rem);
 }
-.join input {
+.newsletter input {
   background: transparent;
   border: 1px solid #cacaca;
   color: #868686;
@@ -349,57 +301,13 @@ section .block,
   width: 70%;
   font-family: var(--font-text-lora);
 }
-.join button {
+.newsletter button {
   color: white;
   background-color: black;
   width: 30%;
   font-size: clamp(0.625rem, 1vw, 0.75rem);
   font-family: var(--font-title-products-worksans);
   text-align: center;
-  cursor: pointer;
-}
-/*Latest news*/
-.latest-news {
-  text-align: start;
-  background-image: url(../img/bg-1.jpg);
-}
-.latest-news img {
-  padding: 4%;
-}
-.latest-news span {
-  color: var(--label);
-  margin-top: 5%;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 14px;
-  font-family: var(--font-text-lora);
-  padding: 0% 4% 0% 4%;
-}
-.latest-news h3 {
-  font-size: clamp(1.375rem, 2vw, 1.5rem);
-  font-family: var(--font-tittle-playfair);
-  color: var(--typography-color2);
-  padding: 3% 4% 0% 4%;
-  font-weight: 100;
-}
-.news{
-  justify-content: center;
-  gap: 2%;
-}
-.new{
-  width: 30%;
-}
-.latest-news p {
-  font-family: var(--font-text-lora);
-  font-size: 17px;
-  margin-bottom: 25px;
-  padding: 4% 4% 0% 4%;
-}
-.latest-news a {
-  font-size: 12px;
-  padding-bottom: 3%;
-  padding: 0% 4% 0% 4%;
-  text-decoration: underline;
   cursor: pointer;
 }
 /*Footer by JJulian*/
@@ -476,8 +384,3 @@ h6 {
     font-size: 16px;
 	font-family: 'Playfair Display', serif;
 }
-
-ul {
-    margin: 0px;
-    padding: 0px;
-}*/
