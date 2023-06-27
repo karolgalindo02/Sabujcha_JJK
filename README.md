@@ -5,6 +5,7 @@ CONTENIDO
 1. Requerimientos
 2. Mockups
 3. Código vs Visual
+4. Despliegue de la página web
 
 1- REQUERIMIENTOS
 
@@ -15,5 +16,7 @@ CONTENIDO
 [Desktop](https://drive.google.com/drive/folders/15O58LqLTld3vrdly4R1xSWiiGY_Oe8gX?usp=drive_link) | [Mobile](https://drive.google.com/drive/folders/1o2P3HVosRcUWgLTZDDzQxqDixe4NMcUa?usp=drive_link)
 
 3- CÓDIGO VS VISUAL
+
 4- DESPLIEGUE DE LA PÁGINA
-╰⁠(⁠ ⁠･⁠ ⁠ᗜ⁠ ⁠･⁠ ⁠)⁠➝<a href="https://sabujcha-jjk.netlify.app/"> Despliegue de la página</a>
+
+╰⁠(⁠ ⁠･⁠ ⁠ᗜ⁠ ⁠･⁠ ⁠)⁠➝ [Link directo a SabujCha](https://sabujcha-jjk.netlify.app/)
