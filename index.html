@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
    </head>
-   <body>
+   <body id="page-top">
     
   <!--Header by Karol-->
       <header id="top">
@@ -63,7 +63,7 @@
              Want to stay healthy <br />
              drink matcha.
            </h1>
-           <u href="shop.html">Shop Now</u>
+           <a href="shop.html">Shop Now</a>
          </div>
        </section>
      <!--Offers by JJulian-->
@@ -177,7 +177,7 @@
         </div>
       </div>
     </section>
-    <!--Join and Latest News-->
+    <!--Join and Latest News by Karol-->
     <section class="join">
       <h1>Join to our Newsletter</h1>
       <div class="email-suscribe">
@@ -213,7 +213,14 @@
           <a>READ MORE</a>
         </div>
     </section>
-     <!--Logos News-->
+     <!--Logos News by JJulian-->
+     <section class="logos">
+      <img src="./src/img/1.jpg" alt="brand">
+      <img class="hidden" src="./src/img/2.jpg" alt="brand2">
+      <img class="hidden" src="./src/img/3.jpg" alt="brand3">
+      <img class="hidden" src="./src/img/4.jpg" alt="brand4">
+      <img class="hidden" src="./src/img/5.jpg" alt="brand5">
+    </section>
 	</main>
      <!--////////////////////////////////////Footer by JJulian-->
         <footer>
@@ -260,9 +267,6 @@
             <img src="./src/icons/payment.png" alt="Payment">
           </div>
         </footer>
-        <a class="go-up" href="#top">
-        <img src="icons/arrows.png" alt="Go Up">
-        </a>
 <!-- ==== Visual Productos ====-->
 <div id="visual1" class="visualmask">
   <div class="visualbox movedown">
@@ -537,19 +541,9 @@
   </div>
 </div>
 <!-- ==== End Visual Productos ====-->        
-        <script>
-        const navToggle = document.querySelector(".menu");
-        const navMenu = document.querySelector(".nav-menu");
-
-        navToggle.addEventListener("click", () => {
-          navMenu.classList.toggle("nav-menu_visible");
-
-          if (navMenu.classList.contains("nav-menu_visible")) {
-           navToggle.setAttribute("aria-label", "Cerrar menú");
-          } else {
-           navToggle.setAttribute("aria-label", "Abrir menú");
-          }
-        });
-        </script>
+         <div id="page-top">
+          <a class="go-up" href="#top">
+          <img src="./src/icons/arrows.png">
+          </a></div>
    </body>
 </html>

@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  padding-bottom: 5%;
+  height: 60px;
 }
 
 .nav {
@@ -22,21 +22,24 @@ header {
   left: 0;
 }
 .nav-menu {
-  flex-direction: row;
-  display: none;
-  width: 33.33%;
-  color: var(--tipografia_negro);
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: white;
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  padding: 20px 0;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  left: 100%;
   transition: left 0.3s;
-  order: -1;
+  color: var(--tipografia_negro);
 }
 
 .nav-item {
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 2rem;
-  text-transform: uppercase;
-  width: max-content;
-  font-family: var(--titulo);
+  line-height: 70px;
+  color: var(--tipografia_negro);
 }
 
 .nav-link {
@@ -45,16 +48,19 @@ header {
   color: var(--tipografia_negro);
   font-family: var(--titulo);
 }
-
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #000000;
+    }
 .logo {
   font-weight: bold;
   width: 100%;
   justify-content: flex-start;
+  
 }
 .logo img{
-  width: 50%;
   padding-left: 2%;
-  justify-content: flex-start;
 }
 
 .cart {
@@ -149,10 +155,26 @@ section .sheet {
   width: 35px;
   height: 35px;
 }
-  .button-toTop img{
-  margin-top: 7px;
-  margin-left: 7px;
-  width: 20px;
-  height: 20px;
-} 
+/*Scrollbar*/
+.go-up{
+  display: block;
+  position: fixed;
+  background: #242424 none repeat scroll 0 0;
+  bottom: 40px;
+  cursor: pointer;
+  right: 12px;
+  z-index: 99999999;
+  width: 35px;
+  height: 35px;
+}
+.go-up:hover {
+  background: #519f10 none repeat scroll 0 0;
+}
+.go-up img{
+align-items: center;
+margin-top: 7px;
+margin-left: 7px;
+width: 20px;
+height: 20px;
+}
 }
