@@ -9,9 +9,9 @@
     max-width: 100%;
   }
   :root {
-    --font-tittle-playfair: "Playfair Display", serif;
-    --font-text-lora: "Lora", serif;
-    --font-title-products-worksans: "Work Sans", sans-serif;
+    --titulo: "Playfair Display", serif;
+    --texto: "Lora", serif;
+    --titulo_producto: "Work Sans", sans-serif;
     --typography-color: #575757;
     --typography-color2: #333333;
     --labels-color: #529f0f;
@@ -23,8 +23,30 @@
     padding: 10px 90px 0px 90px;
   }
 
+/*Scrollbar*/
+.go-up{
+  display: block;
+  position: fixed;
+  background: #242424 none repeat scroll 0 0;
+  bottom: 40px;
+  cursor: pointer;
+  right: 12px;
+  z-index: 99999999;
+  width: 35px;
+  height: 35px;
+}
+.go-up:hover {
+  background: #519f10 none repeat scroll 0 0;
+}
+.go-up img{
+align-items: center;
+margin-top: 7px;
+margin-left: 7px;
+width: 20px;
+height: 20px;
+}
 /* Header and nav */
-header {
+#top {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -38,7 +60,7 @@ header {
 .menu {
   display: none;
 }
-.cssmenu ul,
+.nav-menu,
 .logos {
   width: 100%;
   display: flex;
@@ -46,18 +68,22 @@ header {
   list-style: none;
   padding: 10px;
   justify-content: space-evenly;
-  font-family: var(--font-title-products-worksans);
+  font-family: var(--titulo_producto);
   font-weight: bold;
   color: black;
   font-size: 0.75rem;
+  text-decoration: none;
 }
-.cssmenu li {
+.nav-link {
   cursor: pointer;
+  text-decoration: none;
 }
 .logo {
-  display: flex;
-  width: 33.33%;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 80px;
   justify-content: center;
+  margin-left: 100px;
 }
 .logo img {
   cursor: pointer;
@@ -72,7 +98,9 @@ header {
 #select-coin {
   border: none;
   font-size: 14px;
-  font-family: var(--font-text-lora);
+  position: relative;
+  font-family: var(--texto);
+  background-color: #fff;
   cursor: pointer;
 }
 .cart img {
@@ -102,14 +130,15 @@ header {
   }
   .text-home-img1 {
     padding-top: 20%;
-    font-family: var(--font-tittle-playfair);
+    font-family: var(--titulo);
     padding: 265px 0;
   }
-  .text-home-img1 u {
-    font-family: var(--font-title-products-worksans);
+  .text-home-img1 a {
+    font-family: var(--titulo_producto);
     font-size: clamp(1.023rem, 1vw, 1.875rem);
     font-weight: 800;
     cursor: pointer;
+    color: black;
   }
 /*Sale by JJulian*/
 .sale-container {
@@ -135,21 +164,21 @@ header {
   height: 80px;
 }
 .banner h4 {
-  font-family: var(--font-text-lora);
+  font-family: var(--texto);
   color: var(--labels-color);
   font-size: clamp(2rem, 3vw, 2.375rem);
   font-weight: 100;
 }
 .banner h5 {
-  font-family: var(--font-title-products-worksans);
+  font-family: var(--titulo_producto);
   color: var(--typography-color);
   font-size: clamp(0.875rem, 1vw, 0.75rem);
   font-weight: bold;
 }
-/*Lastest products*/
-.lastest-products,
+/*Latest products*/
+.latest-products,
 .new-products,
-.newsletter {
+.join {
   background-image: url(../img/bg-1.jpg);
   margin-top: 5%;
   display: flex;
@@ -158,11 +187,11 @@ header {
   align-items: center;
   padding-bottom: 10%;
 }
-.lastest-products h1,
+.latest-products h1,
 .new-products h1,
-.newsletter h1,
+.join h1,
 .latest-news h1 {
-  font-family: var(--font-tittle-playfair);
+  font-family: var(--titulo);
   font-size: clamp(1.875rem, 4vw, 2.375rem);
   font-weight: 100;
   padding-top: 7%;
@@ -170,14 +199,14 @@ header {
   margin-bottom: 2%;
   text-align: center;
 }
-.lastest-products p,
+.latest-products p,
 .new-products p {
   max-width: 765px;
   text-align: center;
   margin-bottom: 3%;
   font-size: clamp(0.875rem, 1.5vw, 1.25rem);
 }
-.lastest-products-cards,
+.latest-products-cards,
 .new-products-cards {
   display: flex;
   flex-flow: row wrap;
@@ -186,7 +215,7 @@ header {
   padding-left: 7%;
   padding-right: 7%;
 }
-.lastest-products-cards img,
+.latest-products-cards img,
 .card-new-product img {
   width: 100%;
   align-self: center;
@@ -208,7 +237,7 @@ header {
 .card-new-product p {
   text-align: start;
   color: var(--typography-color);
-  font-family: var(--font-title-products-worksans);
+  font-family: var(--titulo_producto);
   font-size: 18px;
   padding-top: 3%;
 }
@@ -224,7 +253,7 @@ del {
 .discount::before {
   content: attr(data-text);
   background: var(--labels-color);
-  font-family: var(--font-text-lora);
+  font-family: var(--texto);
   font-weight: 700;
   text-align: center;
   position: absolute;
@@ -250,7 +279,7 @@ section .block,
   padding-bottom: 3%;
 }
 .block h4 {
-  font-family: var(--font-text-lora);
+  font-family: var(--texto);
   font-style: italic;
   font-weight: 300;
   padding-bottom: 2%;
@@ -258,7 +287,7 @@ section .block,
 }
 .block h6 {
   color: var(--typography-color);
-  font-family: var(--font-title-products-worksans);
+  font-family: var(--titulo_producto);
   padding-bottom: 2%;
   font-size: clamp(0.75rem, 2vw, 0.8rem);
 }
@@ -275,7 +304,7 @@ section .block,
   text-align: center;
 }
 /*Newsletter*/
-.newsletter {
+.join {
   background-image: url(../img/bg-2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -288,10 +317,10 @@ section .block,
   flex-flow: row wrap;
   width: 40%;
 }
-.newsletter h1 {
+.join h1 {
   font-size: clamp(1.5rem, 3vw, 3.75rem);
 }
-.newsletter input {
+.join input {
   background: transparent;
   border: 1px solid #cacaca;
   color: #868686;
@@ -299,15 +328,59 @@ section .block,
   height: 60px;
   padding-left: 3%;
   width: 70%;
-  font-family: var(--font-text-lora);
+  font-family: var(--texto);
 }
-.newsletter button {
+.join button {
   color: white;
   background-color: black;
   width: 30%;
   font-size: clamp(0.625rem, 1vw, 0.75rem);
-  font-family: var(--font-title-products-worksans);
+  font-family: var(--titulo_producto);
   text-align: center;
+  cursor: pointer;
+}
+/*latest news*/
+.latest-news {
+  text-align: start;
+  background-image: url(../img/bg-1.jpg);
+}
+.latest-news img {
+  padding: 4%;
+}
+.latest-news span {
+  color: var(--labels-color);
+  margin-top: 5%;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--texto);
+  padding: 0% 4% 0% 4%;
+}
+.latest-news h3 {
+  font-size: clamp(1.375rem, 2vw, 1.5rem);
+  font-family: var(--titulo);
+  color: var(--typography-color2);
+  padding: 3% 4% 0% 4%;
+  font-weight: 100;
+}
+.news{
+  justify-content: center;
+  gap: 2%;
+}
+.new{
+  width: 30%;
+}
+.latest-news p {
+  font-family: var(--texto);
+  font-size: 17px;
+  margin-bottom: 25px;
+  padding: 4% 4% 0% 4%;
+}
+.latest-news a {
+  font-size: 12px;
+  padding-bottom: 3%;
+  padding: 0% 4% 0% 4%;
+  text-decoration: underline;
   cursor: pointer;
 }
 /*Footer by JJulian*/
@@ -326,11 +399,11 @@ section .block,
 }
 .footer .list-tittle {
   font-weight: 400;
-  font-family: var(--font-tittle-playfair);
+  font-family: var(--titulo);
   font-size: clamp(1.125rem, 1.5vw, 1.25rem);
 }
 .footer li {
-  font-family: var(--font-text-lora);
+  font-family: var(--texto);
   font-size: 14px;
   line-height: 2.5;
   cursor: pointer;
@@ -343,7 +416,7 @@ footer .last-footer {
   background-color: #ebebeb;
   width: 100%;
   font-size: 14px;
-  font-family: var(--font-text-lora);
+  font-family: var(--texto);
   padding: 18px 0 20px;
   padding-left: 7%;
 }
@@ -353,34 +426,8 @@ footer .last-footer {
 .heart {
   color: red;
 }
-.go-up {
+
+.button-toTop {
   display: none;
 }
-/* Text size *//*
-h1 {
-    font-size: 46px;
-    font-weight: 500;
-}
 
-h2 {
-    font-size: 37px;
-}
-
-h3 {
-    font-size: 28px;
-}
-
-h4 {
-    font-size: 22px;
-	font-family: 'Work Sans', sans-serif;
-}
-
-h5 {
-    font-size: 18px;
-	font-family: 'Work Sans', sans-serif;
-}
-
-h6 {
-    font-size: 16px;
-	font-family: 'Playfair Display', serif;
-}
