@@ -1,4 +1,5 @@
-**Proyecto**  ![image](https://github.com/karolgalindo02/Sabujcha_JJK/assets/133469855/96ac0047-f42d-4d30-b504-d4cdb009e518)
+**Proyecto**  
+![image](https://github.com/karolgalindo02/Sabujcha_JJK/assets/133469855/96ac0047-f42d-4d30-b504-d4cdb009e518)
 
 CONTENIDO
 
@@ -26,7 +27,7 @@ Para el footer se usaron listas y flexblox, a continuación se presenta el códi
 ![footer-html-css](https://github.com/karolgalindo02/Sabujcha_JJK/assets/122057880/1746b5a2-3677-4c34-8282-51153d554441)
 
 
-Mediante selectores #id, se realizo el visual del producto, en una hoja aparte de estilos se añadieron las animacione, fonts, contadores y demás:
+Mediante selectores #id, se realizo el visual del producto, en una hoja aparte de estilos se añadieron las animaciones, fonts, contadores y demás:
 ![visual-html-css](https://github.com/karolgalindo02/Sabujcha_JJK/assets/122057880/6b49e3b5-64b3-4d09-b822-e37bd1c0efbf)
 ![visualproduct](https://github.com/karolgalindo02/Sabujcha_JJK/assets/122057880/3cb2d232-2fa9-4820-b832-c44cebcf11b9)
 
@@ -34,10 +35,12 @@ Visual Desktop:
 ![Sabujcha JJK - Desktop](https://github.com/karolgalindo02/Sabujcha_JJK/assets/122057880/bfe3809c-dbe0-4982-9476-6ee064dc86c2)
 
 Codigo Mobile:
-![mobile](https://github.com/karolgalindo02/Sabujcha_JJK/assets/122057880/fa67d424-0968-4ac8-9676-280c6e7fbaa9)
+![mobile](https://github.com/karolgalindo02/Sabujcha_JJK/assets/122057880/f7e145a3-c7a6-45bd-8e9d-96c695f5b170)
+
 
 Visual Mobile:
-![Sabujcha JJK - mobile](https://github.com/karolgalindo02/Sabujcha_JJK/assets/122057880/27e2dde0-987c-46c9-b218-1e9cb7e02037)
+![Sabujcha JJK - mobile](https://github.com/karolgalindo02/Sabujcha_JJK/assets/122057880/c98084d6-3588-468c-b684-06fe6ca94c8e)
+
 
 4- DESPLIEGUE DE LA PÁGINA
 
